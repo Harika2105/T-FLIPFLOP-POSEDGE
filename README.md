@@ -1,16 +1,16 @@
 # T-FLIPFLOP-POSEDGE
 
-**AIM:**
+### **AIM:**
 
 To implement  T flipflop using verilog and validating their functionality using their functional tables
 
-**SOFTWARE REQUIRED:**
+### **SOFTWARE REQUIRED:**
 
 Quartus prime
 
-**THEORY**
+### **THEORY**
 
-**T Flip-Flop**
+### **T Flip-Flop**
 
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
 
@@ -26,17 +26,35 @@ Here, Qtt & Qt+1t+1 are present state & next state respectively. So, T flip-flop
  
 From the above characteristic table, we can directly write the next state equation as Q(t+1)=T′Q(t)+TQ(t)′ ⇒Q(t+1)=T⊕Q(t)
 
-**Procedure**
+### **Procedure**
+```
+1.Define Module: Define a Verilog module for the T flip-flop with inputs (T, CLK) and outputs (Q, Q_bar).
 
-/* write all the steps invloved */
+2.Declare Inputs and Outputs: Declare input and output ports for the module.
 
-**PROGRAM**
+3.Implement Flip-Flop Logic: Write Verilog code to implement the T flip-flop logic based on its functional table. Use a synchronous always @(posedge CLK) block to trigger the flip-flop on the positive edge of the clock signal.
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+4.Simulate Using Testbench: Write a Verilog testbench to simulate the behavior of the T flip-flop under different input conditions.
 
-**RTL LOGIC FOR FLIPFLOPS**
+5.Apply Input Stimuli: In the testbench, apply various combinations of input stimuli (T, CLK) to cover all possible input states.
+```
 
-**TIMING DIGRAMS FOR FLIP FLOPS**
+### **PROGRAM**
 
-**RESULTS**
+![T Flipflop program](https://github.com/user-attachments/assets/7260f716-0b1a-4d25-81dc-4f92e1f9cba4)
+```
+Program for flipflops and verify its truth table in quartus using Verilog programming.
+Developed by:S.HARIKA
+RegisterNumber:24002063
+```
+
+### **RTL LOGIC FOR FLIPFLOPS**
+![T Flip flop](https://github.com/user-attachments/assets/899df8ee-1b49-4060-8d94-1cc8a52ce499)
+
+
+### **TIMING DIGRAMS FOR FLIP FLOPS**
+
+![T flip flop wf](https://github.com/user-attachments/assets/36663d4d-b05c-46e9-bc0c-df51a4c81327)
+
+### **RESULTS**
+Hence, T flipflop using verilog and validating their functionality using their functional tables is implemented.
